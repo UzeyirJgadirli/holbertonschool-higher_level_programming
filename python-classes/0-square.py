@@ -1,10 +1,10 @@
 #!/usr/bin/python3
-"""Square Class
-
-This class don't do anything for the moment
-
+"""
+This module defines a Square class.
 """
 
-
 class Square:
+    """
+    Represents a square.
+    """
     pass
