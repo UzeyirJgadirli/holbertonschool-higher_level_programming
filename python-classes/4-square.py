@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """
-This module defines a Square class with validated size property and area method.
+This module defines a Square class with a size property
+and an area method.
 """
 
 
@@ -16,7 +17,7 @@ class Square:
         Args:
             size (int): size of the square (default 0)
         """
-        self.size = size  # Use setter for validation
+        self.size = size
 
     @property
     def size(self):
