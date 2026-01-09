@@ -33,14 +33,13 @@ class MyHandler(http.server.BaseHTTPRequestHandler):
             }"""
             self.wfile.write(b"OK")
         else:
-            self.send_response(404)
-            self.send_header("Content-type", "text/plain")
-            self.end_headers()
-            """response_data = {
-                "error": "Endpoint not found"
-            }"""
-            self.wfile.write(b"Not Found")
-
+	    self.send_response(404)
+	    self.send_header("Content-type", "application/json")
+	    self.end_headers()
+	    self.wfile.write(json.dumps(
+	        {"error": "Endpoint not found"},
+	        separators=(",", ":")
+	    ).encode("utf-8"))
 Handler = MyHandler
 
 with socketserver.TCPServer(("", PORT), Handler) as httpd:
