@@ -39,7 +39,7 @@ class MyHandler(http.server.BaseHTTPRequestHandler):
             """response_data = {
                 "error": "Endpoint not found"
             }"""
-            self.wfile.write(b"404 Not Found")
+            self.wfile.write(b"Not Found")
 
 Handler = MyHandler
 
