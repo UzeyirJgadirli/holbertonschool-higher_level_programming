@@ -42,7 +42,7 @@ class HTTPHandler(http.server.BaseHTTPRequestHandler):
         # Undefined endpoints
         else:
             self._set_headers(404, "text/plain")
-            self.wfile.write(b"Not Found")
+            self.wfile.write(b"404: Not Found")
 
 
 if __name__ == "__main__":
