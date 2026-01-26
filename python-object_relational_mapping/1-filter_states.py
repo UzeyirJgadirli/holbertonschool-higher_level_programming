@@ -2,7 +2,6 @@
 """
 First ORM
 """
-
 import sys
 import MySQLdb
 
