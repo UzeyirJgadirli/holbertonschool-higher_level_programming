@@ -1,5 +1,7 @@
 #!/usr/bin/python3
-"""Script that prints the State object with the name passed as argument."""
+"""
+First ORM
+"""
 import sys
 from model_state import Base, State
 from sqlalchemy import (create_engine)

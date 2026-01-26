@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-    Script that deletes all State objects with a name containing the letter a.
+First ORM
 """
 import sys
 from model_state import Base, State

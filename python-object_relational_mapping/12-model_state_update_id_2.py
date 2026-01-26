@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-    Script that changes the name of a State object from the database.
+First ORM
 """
 import sys
 from model_state import Base, State

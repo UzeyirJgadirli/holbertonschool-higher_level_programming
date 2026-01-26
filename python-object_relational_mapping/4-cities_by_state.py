@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-    Script that lists all states from the database.
+First ORM
 """
 import MySQLdb
 import sys

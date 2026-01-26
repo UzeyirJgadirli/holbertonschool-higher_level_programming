@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-    Script that lists all State objects from the database.
+First ORM
 """
 import sys
 from model_state import Base, State
